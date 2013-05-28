@@ -120,7 +120,7 @@ namespace KinectTest
             Console.Out.WriteLine("RESULT: {0} ({1})", recognizedText, result);
 
            TcpSocketManager.getInstance().sendMessage(result);
-           WebSockeManager.getInstance().sendMessage(result.ToString());
+           WebSockeManager.getInstance().sendMessage(result);
         }
 
         private int speechToInt(string speechResult)

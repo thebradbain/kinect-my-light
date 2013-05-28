@@ -12,10 +12,10 @@ using System.Threading.Tasks;
 
 namespace KinectTest
 {
-    public class TcpSocketManager : ISocketManager
+    class TcpSocketManager
     {
         private static TcpSocketManager server = new TcpSocketManager();
-        private TcpSocketManager() { clients = new List<TcpClient>(); }
+        private TcpSocketManager() : base() { clients = new List<TcpClient>(); }
         public static TcpSocketManager getInstance()
         {
             return server;

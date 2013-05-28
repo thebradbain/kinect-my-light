@@ -12,7 +12,7 @@ using System.Threading;
 
 namespace KinectTest
 {
-    class WebSockeManager : ISocketManager
+    class WebSockeManager
     {
         static WebSockeManager webSocketManager = new WebSockeManager();
         private WebSockeManager() { this.clients = new List<TcpClient>(); }
@@ -100,10 +100,10 @@ namespace KinectTest
             Console.WriteLine("Finished Handshake");
         }
 
-        public void sendMessage(string message) //for every client in clients, start a new thread and send out a message
+        public void sendMessage(byte message) //for every client in clients, start a new thread and send out a message
         {
             foreach(TcpClient client in this.clients) {
-                Thread clientThread = new Thread(new ThreadStart(() => sendString(client, message))); //start a new thread
+                Thread clientThread = new Thread(new ThreadStart(() => sendString(client, message.ToString()))); //start a new thread
                 clientThread.Start();
             }
         }
