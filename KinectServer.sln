@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Windows Desktop
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinectTest", "KinectTest\KinectTest.csproj", "{39808CF0-A934-4579-A751-62EEE82AAACE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinectServer", "KinectTest\KinectServer.csproj", "{39808CF0-A934-4579-A751-62EEE82AAACE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleClient", "..\SimpleClient\SimpleClient\SimpleClient.csproj", "{CC20B214-69A5-49F5-A8FE-4645A80F4AAA}"
 EndProject
